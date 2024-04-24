@@ -10,8 +10,8 @@ O **MysticFalls Cosméticos** foi um projeto desenvolvido como parte do **Progra
 - **Vercel**
 
 ## COMO USAR
-1. Clone este repositório: `git clone https://github.com/seu-usuario/mysticfalls-cosmeticos.git`
-2. Navegue até o diretório do projeto: `cd mysticfalls-cosmeticos`
+1. Clone este repositório: `https://github.com/cmcoser/projeto-mysticfalls.git`
+2. Navegue até o diretório do projeto
 3. Abra o arquivo `index.html` em seu navegador.
 
 ## CONTRIBUIÇÃO
