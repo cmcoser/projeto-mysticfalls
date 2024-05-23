@@ -16,3 +16,9 @@ O **MysticFalls Cosméticos** foi um projeto desenvolvido como parte do **Progra
 
 ## CONTRIBUIÇÃO
 Agradeço a oportunidade de fazer parte da trilha DevWeb do programa Desenvolve da Boticário, dessa forma, tenho acesso a diversos cursos incríveis dentro da plataforma Alura em que posso estudar e me especializar para colocar em prática o que estou aprendendo.
+
+## ATUALIZAÇÕES PARA A SEGUNDA ETAPA
+Durante o final do mês de Maio de 2024, realizei algumas modificações em meu projeto para que pudesse adicionar o JavaScript dentro do meu código. Dessa forma, utilizando o JS, pude adicionar três funções:
+- **Um carrossel para que os ítens mais vendidos pudessem ser visualizados em fileira única**
+- **Um botão de "adicionar à sacola" embaixo de cada ítem à venda + a adição de um contador de ítens ao lado da sacola**
+- **Uma modificação realizada no contador da promoção de 40% off em que os segundos da contagem estão animados em tempo real**
