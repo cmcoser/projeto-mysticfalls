@@ -44,8 +44,10 @@ img {
     width: 100%;
 }
 
-body{
+body {
     font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .logo__cabecalho {
@@ -153,6 +155,7 @@ header {
 .banner__1 {
     margin-top: none;
     background-color: var(--texto-claro);
+    padding: 20px 0; /* modificação realizada para o segundo envio */
 }
 
 .banner__1__container {
@@ -178,6 +181,11 @@ header {
 .banner__1__container .icones img {
     display: block; 
     margin-bottom: 5px; 
+}
+
+/* modificação realizada para o segundo envio */
+.novidades {
+    padding: 50px 0;
 }
 
 .novidades__nav {
@@ -259,44 +267,63 @@ header {
     cursor: pointer;
 }
 
+/* modificações realizadas para o segundo envio */
+.vendas {
+    padding: 50px 0;
+}
+
 .vendas__nav {
     font-size: 2rem;
     color: var(--texto-escuro);
     cursor: pointer;
 }
-  
+
 .vendas__nav span {
+    margin-right: 15px;
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
 }
-  
+
 .vendas__nav span:hover {
     color: var(--cor-de-fundo);
 }
-  
-.vendas__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+
+.vendas__grade-wrapper {
+    overflow: hidden;
 }
-  
+
+.vendas__grade {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
 .vendas__imagens {
-    cursor: pointer;
-  }
-  
-.vendas__detalhes {
-    padding: 1rem 0;
-    background-color: var(--texto-claro);
+    width: 100%;
+    padding: 10px;
     text-align: center;
 }
-  
+
+/* modificações realizadas para o segundo envio */
+.vendas__imagens img {
+    max-width: 450px;
+    max-height: 270px; 
+    width: auto;
+    height: auto;
+}
+
+.vendas__detalhes {
+    padding: 1rem 0;
+    text-align: center;
+}
+
 .vendas__detalhes .preco {
     font-size: 0.8rem;
 }
-  
+
 .vendas__detalhes .preco span {
     color: var(--cor-de-fundo);
 }
+
 
 footer {
   background-color: var(--texto-claro);
@@ -345,7 +372,7 @@ footer {
   background-color: var(--cor-de-fundo);
 }
 
-@media (width < 900px) {
+@media (max-width: 900px) {
   .banner__1__container {
     gap: 3rem;
 }
@@ -356,22 +383,75 @@ footer {
 }
 
 .vendas__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
 }
 
-@media (width < 600px) {
-  .banner__2__container h2 {
-    font-size: 4rem;
-}
+@media (max-width: 600px) {
+    .banner__2__container h2 {
+      font-size: 4rem;
+}  
 
 .vendas__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
+}
+
+/* modificações do botão de adicionar à sacola */
+.adicionar-sacola {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionar-sacola:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.vendas__detalhes .adicionar-sacola {
+    margin-top: 10px; 
+}
+
+.contador-sacola {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.sacola-container .contador-sacola {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    border-radius: 50%; 
+    padding: 5px 8px;
+    font-size: 0.8rem; 
+    position: absolute;
+    top: -6px; 
+    right: -16px;
+}
+
+.sacola-container {
+    position: relative;
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sacola-container i {
+    color: var(--branco); 
 }

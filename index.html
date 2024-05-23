@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <title>Mystic Falls | Essências do Outono</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mystic Falls | Essências do Outono</title>
+</head>
+
 <!-- espaço do primeiro cabeçalho -->
 <body>
     <div class="section__container logo__cabecalho">
         <img src="imagens/logo.png" alt="logo">
 <!-- informações de contato -->
-        <div class="entre__em__contato">
-            <p><i class="ri-mail-unread-line"></i> info@mysticfalls.com.br</p>
-            <p><i class="ri-phone-line"></i> +554312345678</p>
-        </div>
-    </div>
+<div class="entre__em__contato">
+    <p><i class="ri-mail-unread-line"></i> info@mysticfalls.com.br</p>
+    <p><i class="ri-phone-line"></i> +554312345678</p>
+</div>
+</div>
 </body>
+
 <!-- espaço dos ítens do cabeçalho e outros -->
-        <nav>
-            <div class="section__container nav__links">
-                <span><a href="#">INÍCIO</a></span>
-                <span><a href="#">LANÇAMENTOS</a></span>
-                <span><a href="#">PROMO DO DIA</a></span>
-                <span><a href="#">PERFUMARIA</a></span>
-                <span><a href="#">CORPO E BANHO</a></span>
-                <span><a href="#">SPA DAY</a></span>
-                <span><a href="#">CABELOS</a></span>
-                <span><a href="#">UNHAS</a></span>
-                <span><a href="#">MAQUIAGEM</a></span>
-                <span><a href="#">CUPONS</a></span>
-                <span>
-                    <a href="#">
-                    <i class="ri-shopping-bag-line"></i>
-                </a>
-            </span>
-            </div>
-        </nav>
+<nav>
+    <div class="section__container nav__links">
+        <span><a href="#">INÍCIO</a></span>
+        <span><a href="#">LANÇAMENTOS</a></span>
+        <span><a href="#">PROMO DO DIA</a></span>
+        <span><a href="#">PERFUMARIA</a></span>
+        <span><a href="#">CORPO E BANHO</a></span>
+        <span><a href="#">SPA DAY</a></span>
+        <span><a href="#">CABELOS</a></span>
+        <span><a href="#">UNHAS</a></span>
+        <span><a href="#">MAQUIAGEM</a></span>
+        <span><a href="#">CUPONS</a></span>
+
+<!-- espaço da modificação da sacola -->
+        <div class="sacola-container">
+            <i class="ri-shopping-bag-line"></i>
+            <span class="contador-sacola">0</span>
+        </div>                         
+    </div>
+</nav>
+
 <!-- espaço dos ítens da nova coleção de outono -->
         <header>
             <div class="section__container cabecalho__container">
@@ -47,6 +51,7 @@
                 <button class="btn">COMPRE AGORA</button>
             </div>
         </header>
+
 <!-- itens de produtos específicos -->
         <section class="banner__1">
          <div class="section__container banner__1__container">
@@ -80,6 +85,7 @@
             </div>
          </div>   
         </section>
+
 <!-- produtos que são novidade -->
         <section class="novidades">
             <div class="section__container novidades__container">
@@ -105,102 +111,100 @@
             </div>
             </div>
         </section>
+
 <!-- banner da promoção e contagem regressiva -->
         <section class="banner__2">
             <div class="section__container banner__2__container">
                 <p>PROMOÇÕES</p>
                 <h2>40% OFF</h2>
+<!-- modificação adicionada para deixar o contador animado -->
                 <div class="contagem">
-                    <div class="quadrado">
+                    <div class="quadrado dias">
                         <span>30</span>
                         <span>DIAS</span>
                     </div>
-                    <div class="quadrado">
+                    <div class="quadrado horas">
                         <span>23</span>
                         <span>HORAS</span>
                     </div>
-                    <div class="quadrado">
+                    <div class="quadrado minutos">
                         <span>10</span>
                         <span>MINS</span>
                     </div>
-                    <div class="quadrado">
-                        <span>28</span>
+                    <div class="quadrado segundos">
+                        <span>59</span>
                         <span>SEGS</span>
                     </div>
                 </div>
                 <button>COMPRE AGORA</button>
             </div>
         </section>
-<!-- espaço dos itens que estão a venda com desconto -->
-        <section class="vendas">
-            <div class="section__container vendas__container">
-                <div class="section__cabecalho">
-                    <div class="section__title">MAIS VENDIDOS</div>
-                    <div class="vendas__nav">
-                        <span><i class="ri-arrow-left-s-line"></i></span>
-                        <span><i class="ri-arrow-right-s-line"></i></span>
+
+<!-- modificação realizada para a inclusão do carrossel através do JavaScript -->
+<section class="vendas">
+    <div class="section__container vendas__container">
+        <div class="section__cabecalho">
+            <div class="section__title">MAIS VENDIDOS</div>
+            <div class="vendas__nav">
+                <span id="anterior"><i class="ri-arrow-left-s-line"></i></span>
+                <span id="proximo"><i class="ri-arrow-right-s-line"></i></span>
+            </div>
+        </div>
+        <div class="vendas__grade-wrapper">
+            <div class="vendas__grade">
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-1.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Batom Encanto de Perséfone</p>
+                        <p class="preco"><span>R$16,80</span> <del>R$42,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
                 </div>
-                <div class="vendas__grid">
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-1.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Batom Encanto de Perséfone</p>
-                            <p class="preco"><span>R$16,80</span> <del>R$42,00</del></p>
-                        </div>
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-2.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Base Olhos de Morrigan</p>
+                        <p class="preco"><span>R$32,00</span> <del>R$80,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-2.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Base Olhos de Morrigan</p>
-                            <p class="preco"><span>R$32,00</span> <del>R$80,00</del></p>
-                        </div>
+                </div>
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-3.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Batom Asas de Fadas</p>
+                        <p class="preco"><span>R$61,20</span> <del>R$102,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-3.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Batom Asas de Fadas</p>
-                            <p class="preco"><span>R$61,20</span> <del>R$102,00</del></p>
-                        </div>
+                </div>
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-4.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Base Magia de Circe</p>
+                        <p class="preco"><span>R$67,12</span> <del>R$108,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-4.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Base Magia de Circe</p>
-                            <p class="preco"><span>R$67,12</span> <del>R$108,00</del></p>
-                        </div>
+                </div>
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-5.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Pincel Arco de Artemis</p>
+                        <p class="preco"><span>R$19,20</span> <del>R$32,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-5.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Pincel Arco de Artemis</p>
-                            <p class="preco"><span>R$19,20</span> <del>R$32,00</del></p>
-                        </div>
-                    </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-6.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Sérum Brilho de Freya</p>
-                            <p class="preco"><span>R$112,00</span> <del>R$180,00</del></p>
-                        </div>
-                    </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-7.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Sérum Sussurros de Selene</p>
-                            <p class="preco"><span>R$112,00</span> <del>R$180,00</del></p>
-                        </div>
-                    </div>
-                    <div class="vendas__imagens">
-                        <img src="imagens/produto-8.png" alt="vendas">
-                        <div class="vendas__detalhes">
-                            <p>Sabonete Outono de Deméter</p>
-                            <p class="preco"><span>R$25,80</span> <del>R$43,00</del></p>
-                        </div>
+                </div>
+                <div class="vendas__imagens">
+                    <img src="imagens/produto-6.png" alt="vendas">
+                    <div class="vendas__detalhes">
+                        <p>Sérum Brilho de Freya</p>
+                        <p class="preco"><span>R$112,00</span> <del>R$140,00</del></p>
+                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
 <!-- espaço do footer, endereço e número fictício -->
         <footer>
             <div class="section__container footer__container">
@@ -238,5 +242,8 @@
               Copyright &#169; Projeto de Website Responsivo. Christiellen Coser, 2024. Todos os direitos reservados.
             </div>
           </footer>
-    </body>
+
+<!-- linkando o JavaScript -->
+<script src="script.js"></script>
+</body>
 </html>
