@@ -22,3 +22,9 @@ Durante o final do mês de Maio de 2024, realizei algumas modificações em meu 
 - **Um carrossel para que os ítens mais vendidos pudessem ser visualizados em fileira única**
 - **Um botão de "adicionar à sacola" embaixo de cada ítem à venda + a adição de um contador de ítens ao lado da sacola**
 - **Uma modificação realizada no contador da promoção de 40% off em que os segundos da contagem estão animados em tempo real**
+
+## ATUALIZAÇÕES PARA A TERCEIRA ETAPA
+Durante o início do mês de Julho de 2024, realizei algumas modificações em meu projeto para que fosse finalizado e enviado para a etapa final do programa Desenvolve Boticário 2024. Para esssa etapa, foram pedidos os seguintes tópicos:
+- **Desenvolver uma API REST com Node e Express que forneça os dados para o site responsivo criado no projeto**
+- **Integrar o frontend e a API**
+- **Armazenar as informações no banco de dados MongoDB**
