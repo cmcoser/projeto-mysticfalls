@@ -22,26 +22,28 @@
 </body>
 
 <!-- espaço dos ítens do cabeçalho e outros -->
-<nav>
-    <div class="section__container nav__links">
-        <span><a href="#">INÍCIO</a></span>
-        <span><a href="#">LANÇAMENTOS</a></span>
-        <span><a href="#">PROMO DO DIA</a></span>
-        <span><a href="#">PERFUMARIA</a></span>
-        <span><a href="#">CORPO E BANHO</a></span>
-        <span><a href="#">SPA DAY</a></span>
-        <span><a href="#">CABELOS</a></span>
-        <span><a href="#">UNHAS</a></span>
-        <span><a href="#">MAQUIAGEM</a></span>
-        <span><a href="#">CUPONS</a></span>
-
-<!-- espaço da modificação da sacola -->
-        <div class="sacola-container">
-            <i class="ri-shopping-bag-line"></i>
-            <span class="contador-sacola">0</span>
-        </div>                         
-    </div>
-</nav>
+        <nav>
+            <div class="section__container nav__links">
+                <span><a href="#">INÍCIO</a></span>
+                <span><a href="#">LANÇAMENTOS</a></span>
+                <span><a href="#">PROMO DO DIA</a></span>
+                <span><a href="#">PERFUMARIA</a></span>
+                <span><a href="#">CORPO E BANHO</a></span>
+                <span><a href="#">SPA DAY</a></span>
+                <span><a href="#">CABELOS</a></span>
+                <span><a href="#">UNHAS</a></span>
+                <span><a href="#">MAQUIAGEM</a></span>
+                <span><a href="#">CUPONS</a></span>
+                <span>
+                    <a href="#">
+                    <div class="sacola">
+                        <i class="ri-shopping-bag-line"></i>
+                        <span id="contador-sacola">0</span>
+                    </div>                    
+                </a>
+            </span>
+            </div>
+        </nav>
 
 <!-- espaço dos ítens da nova coleção de outono -->
         <header>
@@ -117,22 +119,21 @@
             <div class="section__container banner__2__container">
                 <p>PROMOÇÕES</p>
                 <h2>40% OFF</h2>
-<!-- modificação adicionada para deixar o contador animado -->
                 <div class="contagem">
-                    <div class="quadrado dias">
+                    <div class="quadrado">
                         <span>30</span>
                         <span>DIAS</span>
                     </div>
-                    <div class="quadrado horas">
+                    <div class="quadrado">
                         <span>23</span>
                         <span>HORAS</span>
                     </div>
-                    <div class="quadrado minutos">
+                    <div class="quadrado">
                         <span>10</span>
                         <span>MINS</span>
                     </div>
-                    <div class="quadrado segundos">
-                        <span>59</span>
+                    <div class="quadrado">
+                        <span>28</span>
                         <span>SEGS</span>
                     </div>
                 </div>
@@ -140,7 +141,7 @@
             </div>
         </section>
 
-<!-- modificação realizada para a inclusão do carrossel através do JavaScript -->
+<!-- modificação realizada para a inclusão de JavaScript e envio do segundo desafio -->
 <section class="vendas">
     <div class="section__container vendas__container">
         <div class="section__cabecalho">
@@ -157,7 +158,7 @@
                     <div class="vendas__detalhes">
                         <p>Batom Encanto de Perséfone</p>
                         <p class="preco"><span>R$16,80</span> <del>R$42,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div class="vendas__imagens">
@@ -165,7 +166,7 @@
                     <div class="vendas__detalhes">
                         <p>Base Olhos de Morrigan</p>
                         <p class="preco"><span>R$32,00</span> <del>R$80,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div class="vendas__imagens">
@@ -173,7 +174,7 @@
                     <div class="vendas__detalhes">
                         <p>Batom Asas de Fadas</p>
                         <p class="preco"><span>R$61,20</span> <del>R$102,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div class="vendas__imagens">
@@ -181,7 +182,7 @@
                     <div class="vendas__detalhes">
                         <p>Base Magia de Circe</p>
                         <p class="preco"><span>R$67,12</span> <del>R$108,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div class="vendas__imagens">
@@ -189,7 +190,7 @@
                     <div class="vendas__detalhes">
                         <p>Pincel Arco de Artemis</p>
                         <p class="preco"><span>R$19,20</span> <del>R$32,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div class="vendas__imagens">
@@ -197,13 +198,14 @@
                     <div class="vendas__detalhes">
                         <p>Sérum Brilho de Freya</p>
                         <p class="preco"><span>R$112,00</span> <del>R$140,00</del></p>
-                        <button class="adicionar-sacola" data-produto-id="1">ADICIONAR À SACOLA</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- espaço do footer, endereço e número fictício -->
         <footer>
